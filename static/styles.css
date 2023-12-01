@@ -1,0 +1,149 @@
+body {
+  background-color: #fff;
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+.container {
+text-align: center;
+}
+
+.header {
+  background-color: #7b6CAD;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.section {
+  padding: 10% 10%;
+}
+
+
+
+button, input[type="submit"] {
+  background-color: #d9edff;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  vertical-align: middle;
+}
+
+
+input[type="text"] {
+  line-height: 1.8;
+  width: 25%;
+}
+
+input[type="text"]:hover {
+  background-color: #f5f5f5;
+  transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.correct {
+  background-color: green;
+  color: #fff;
+}
+
+.incorrect {
+  background-color: red;
+  color: #fff;
+}
+
+.question-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.question-image {
+  margin-right: 10%;
+  max-width: 50%;
+  border-radius: 16px;
+
+}
+
+/* Modificado el estilo para los botones */
+.answer-input {
+  width: 60px;
+  height: 60px; /* Establece la misma altura y anchura para hacerlo un cuadrado */
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.check-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.check-button {
+  margin-top: 10px;
+}
+
+.Mundo1 {
+  height: 500px;
+}
+
+.Imgclasea3 {
+  height: 800px;
+}
+img{
+  width: 80%;
+  height: 80%;
+}
+
+.Mundo2 {
+  height: 500px;
+}
+
+.Mundo3 {
+  height: 500px;
+}
+
+.duabtn {
+  all: unset;
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 17px;
+}
+
+/* Important stuff below */
+.duabtn.txt {
+  background-color: #7b6CAD;
+  box-shadow: 0 5px 0 #5c4f88; 
+  margin-top: 16px;
+  width: 75%;
+  height: 25px;
+}
+
+.duabtn:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.footer{
+  display: inline-flex;
+  width: -webkit-fill-available;
+  margin: 16px;
+  font-size: xx-large;
+  text-align: center;
+}

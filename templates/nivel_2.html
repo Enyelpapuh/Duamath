@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="static\styles.css" rel="stylesheet">
+    <title>Nivel 2!</title>
+    <script>
+        // Respuestas para cada pregunta
+        const respuestas1 = {
+            1: "SUMA",
+            2: "RESTA",
+            3: "IGUAL",
+            4: "MAYOR",
+            5: "MENOR"
+        };
+
+        function corregir1(id) {
+            let input1 = document.querySelector("#answer_" + id);
+            let correction1 = document.querySelector("#correcion_" + id);
+
+            if (input1.value.toUpperCase() == respuestas1[id]) {
+                input1.style = "background-color: GREEN; color: #fff";
+                correction1.innerHTML = "Correcto";
+            } else {
+                input1.style = "background-color: RED; color: #fff";
+                correction1.innerHTML = "Incorrecto";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Nivel #2!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Signos</h2>
+            <hr>
+            <!-- TODO: Add multiple choice question here -->
+            <h3>Escriba correctamente el nombre del signo</h3>
+            <div class="question-container">
+                <img class="question-image" src="static\Num0_1.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_1">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir1(1)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_1"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Num0_2.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_2">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir1(2)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_2"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Num0_3.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_3">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir1(3)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_3"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Num0_4.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_4">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir1(4)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_4"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Num0_5.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_5">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir1(5)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_5"></h3>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a id="finish" href="/actualizando" style="display: block;" class="nivel duabtn txt" data-value="3">Finalizar</a>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('a.nivel').on('click', function(event) {
+      event.preventDefault();
+      var nivel = $(this).data('value');
+      window.location.href = '/actualizando?nivel=' + nivel;
+    });
+  });
+</script>
+            </div>
+
+    </div>
+</body>
+
+</html>

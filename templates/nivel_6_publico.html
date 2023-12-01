@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="static\styles.css" rel="stylesheet">
+    <title>Nivel 2 de resta!</title>
+    <script>
+        // Respuestas duabtn txt para cada pregunta
+        const respuestas2_2 = {
+            1: "-",
+            2: "-",
+            3: "+",
+            4: "+",
+            5: "-",
+            6: "-",
+            7: "+",
+            8: "-",
+            9: "-",
+            10: "+"
+        };
+
+        function corregir2_2(id) {
+            let input2_2 = document.querySelector("#answer_" + id);
+            let correction2_2 = document.querySelector("#correcion_" + id);
+
+            if (input2_2.value.toUpperCase() == respuestas2_2[id]) {
+                input2_2.style = "background-color: GREEN; color: #fff";
+                correction2_2.innerHTML = "Correcto";
+            } else {
+                input2_2.style = "background-color: RED; color: #fff";
+                correction2_2.innerHTML = "Incorrecto";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Clase #2!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Reste Correctamente </h2>
+            <hr>
+            <!-- TODO: Add multiple choice question here -->
+            <h3>Resta</h3>
+            <div class="question-container">
+                <img class="question-image" src="static\Resta2_1.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_1">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir2_2(1)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_1"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Resta2_2.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_2">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir2_2(2)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_2"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Resta2_3.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_3">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir2_2(3)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_3"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Resta2_4.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_4">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir2_2(4)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_4"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Resta2_5.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_5">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir2_2(5)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_5"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Resta2_6.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_6">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir2_2(6)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_6"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Resta2_7.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_7">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir2_2(7)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_7"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Resta2_8.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_8">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir2_2(8)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_8"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Resta2_9.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_9">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir2_2(9)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_9"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Resta2_10.png" alt="XD">
+                <input class="answer-input" type="text" placeholder="" id="answer_10">
+                <div class="check-container">
+                    <button class="check-button duabtn txt" onclick="corregir2_2(10)" type="button">Verificar</button>
+                    <h3 class="bot" id="correcion_10"></h3>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a id="finish" href="/mapa" style="display: block;" class="nivel duabtn txt">Finalizar</a>
+            </div>
+
+
+    </div>
+</body>
+
+</html>
+2_

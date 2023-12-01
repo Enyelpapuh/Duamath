@@ -1,0 +1,56 @@
+{% extends "privado.html" %}
+
+{% block title %}
+    Clases
+{%endblock%}
+
+{% block link%}
+<link rel="stylesheet" href="/static/clases.css">
+{%endblock%}
+
+{%block main%}
+
+    <div class="d-flex justify-content-evenly container-fluid py-5 text-center">
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.elespectador.com/resizer/qFO8p6usEUmhI9dExMtBHbLd2KU=/525x350/filters:quality(60):format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/BOP5BVFGYBDMDK4J5B7YQ3VOUM.jpg"
+                class="card-img-top" alt="no imagen (aventura)">
+            <div class="card-body">
+                <h1>clases #1</h1>
+                <p class="card-text">Los numeros simbolos
+                </p>
+                <a href="/clase_1" class="duabtn txt">A estudiar</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2023/08/08/16914915339159.jpg"
+                class="card-img-top" alt="no imagen (ver mapa)">
+            <div class="card-body">
+                <h1>clase #2</h1>
+                <p class="card-text">las sumas vamos a </p>
+                <a href="/clase_2" class="duabtn txt">A estudiar</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2023/08/08/16914915339159.jpg"
+                class="card-img-top" alt="no imagen (ver mapa)">
+            <div class="card-body">
+                <h1>clase #3</h1>
+                <p class="card-text">esos son restas? </p>
+                <a href="/clase_3" class="duabtn txt">A estudiar</a>
+            </div>
+
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <h1>clase #4</h1>
+            <img src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2023/08/08/16914915339159.jpg"
+                class="card-img-top" alt="no imagen (ver mapa)">
+            <div class="card-body">
+                <p class="card-text"> Menor y Mayor? </p>
+                <a href="/clase_4" class="duabtn txt">A estudiar</a>
+            </div>
+        </div>
+    </div>
+{%endblock%}

@@ -1,0 +1,317 @@
+*{
+  font-family: din-round,sans-serif;
+  font-size: 18px;
+}
+body{
+    font-size: 24px;
+
+    /*background-image: url("https://i.pinimg.com/1200x/8e/55/d7/8e55d76368c21ec92ffa11a062e990cc.jpg");
+    height: 1080px;
+    width: 720px;*/
+}
+.navbar.bg-color {
+    background-color: #7b6CAD; /* Cambiar a tu color deseado */
+}
+.card{
+    margin-top: 10px;
+    padding: 16px 0;
+}
+
+body {
+    padding-bottom: 70px; /* Ajusta el valor según sea necesario para dejar espacio para el footer */
+    margin-bottom: 0; /* Evita el margen inferior predeterminado del cuerpo */
+    min-height: 100vh; /* Hace que el cuerpo ocupe al menos el tamaño de la ventana */
+
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+
+  /*los estilos para los botones de niveles*/
+  .levels{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+background-color: #B9ABEB;
+border-radius: 20px;
+font-size: 20px;
+
+
+  }
+  .mundo{
+    height: 70px;
+    width: 100px;
+    border-radius: 50% !important;
+    background-color: #7b6CAD;
+    box-shadow: 0 5px 0 darkorchid
+    
+  }
+  .mundo:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+
+  .lvl{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
+
+.level1{
+
+  padding: 10px 20px;
+  background-color: #7b6CAD;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.level2{
+  padding: 10px 20px;
+  background-color: #7b6CAD;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+}
+
+.level3{
+    padding: 10px 20px;
+    background-color: #7b6CAD;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+
+.level4{
+  padding: 10px 20px;
+  background-color: #7b6CAD;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+  .d-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+.lvl{
+margin-top: 16px;
+margin-left: auto;
+margin-right: auto;
+
+background-color: #7b6CAD;
+}
+/*#9777F5 --> morado mas clarito
+#B9ABEB --> morado claro*/
+/*=======duaBton========*/
+._1reas {/*------>para boton bloqueado*/
+  height: 34px;
+  left: 14px;
+  position: absolute;
+  top: 9px;
+  width: 42px;
+}
+
+
+
+img {
+  border-style: none;
+}
+.duabtn {
+  all: unset;
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 17px;
+}
+
+/* Important stuff below */
+.duabtn.txt {
+  background-color: #7b6CAD;
+  box-shadow: 0 5px 0 #5c4f88; 
+  margin-top: 16px;
+  width: 75%;
+  height: 20px;
+}
+
+.duabtn:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+/*===================*/
+.button {
+  height: 50px;
+  width: 70px;
+  border-radius: 100%;
+  background-color: purple;
+  box-shadow: 0 5px 0 darkorchid
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.block {
+  height: 50px;
+  width: 70px;
+  border-radius: 100%;
+  background-color: gray;
+  box-shadow: 0 5px 0 darkslategray;
+  margin-bottom: 50px;
+  
+}
+
+.block:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.uno{
+  margin-bottom: 20px;
+  position: relative;
+  right: 10px;
+
+}
+.dos{
+  position: relative;
+  left: 90px;
+  margin-bottom: 30px;
+
+}
+.tres{
+
+  position: relative;
+  right: 90px;
+  margin-bottom: 25px;
+
+}
+.colorbar {
+  background-color: #59439f;
+  color: aliceblue;
+  text-align: center;
+  font-size: 16px;
+}
+/*-----------------ventana emergente-------------*/
+/* Estilos para la ventana emergente */
+.ventana {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: rgb(169, 90, 169);
+  border: 1px solid #5c4f88;
+  z-index: 9999;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 16px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* Estilos para el botón de cerrar */
+.cerrar {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+.mensaje{
+  background-color: #B9ABEB;
+  border-radius: 16px;
+  height: 300px;
+  margin-bottom: 16px;
+}
+.mensaje1{
+  background-color: #B9ABEB;
+  border-radius: 16px;
+  height: 180px;
+  margin-bottom: 16px;
+}
+
+
+
+@media (min-width: 700px) {
+  .cuerpo {
+    display: flex;
+  }
+  .inicia{
+    display:flex;
+    flex-direction: column;
+    padding: 16px 16px 16px 16px;
+    margin-bottom: 16px;
+  }
+  .mensaje{
+    background-color: #B9ABEB;
+    border-radius: 16px;
+    height: 200px;
+    margin-bottom: 16px;
+  }
+  .mensaje1{
+    background-color: #B9ABEB;
+    border-radius: 16px;
+    height: 180px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 600px) {
+  .cuerpo {
+    display: flex;
+  }
+  .inicia{
+    display:flex;
+    flex-direction: column;
+    padding: 16px 16px 16px 16px;
+    margin-bottom: 16px;
+  }
+  .mensaje{
+    background-color: #B9ABEB;
+    border-radius: 16px;
+    height: 25%;
+    margin-bottom: 16px;
+  }
+  .mensaje1{
+    background-color: #B9ABEB;
+    border-radius: 16px;
+    height: 20%;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="static/styles.css" rel="stylesheet">
+    <title>Nivel 2 mayor o menor!</title>
+    <script>
+
+function corregir3(id, esCorrecto) {
+    let correction3 = document.querySelector("#correcion_" + id);
+
+    if (esCorrecto) {
+        correction3.innerHTML = "Correcto";
+        correction3.className = "correct";
+    } else {
+        correction3.innerHTML = "Incorrecto";
+        correction3.className = "incorrect";
+    }
+}
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Clase #2!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Comparar numeros</h2>
+            <hr>
+            <!-- TODO: Add multiple choice question here -->
+            <h3>Comparar</h3>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Comparar2_1.png" alt="XD">
+                <div class="check-container">
+                    <button class="answer-button duabtn txt" onclick="corregir3(1, true)" type="button">Verdadero</button>
+                    <button class="answer-button duabtn txt" onclick="corregir3(1, false)" type="button">Falso</button>
+                    <h3 class="bot" id="correcion_1"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Comparar2_2.png" alt="XD">
+                <div class="check-container">
+                    <button class="answer-button duabtn txt" onclick="corregir3(2, true)" type="button">Verdadero</button>
+                    <button class="answer-button duabtn txt" onclick="corregir3(2, false)" type="button">Falso</button>
+                    <h3 class="bot" id="correcion_2"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Comparar2_3.png" alt="XD">
+                <div class="check-container">
+                    <button class="answer-button duabtn txt" onclick="corregir3(3, true)" type="button">Verdadero</button>
+                    <button class="answer-button duabtn txt" onclick="corregir3(3, false)" type="button">Falso</button>
+                    <h3 class="bot" id="correcion_3"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Comparar2_4.png" alt="XD">
+                <div class="check-container">
+                    <button class="answer-button duabtn txt" onclick="corregir3(4, false)" type="button">Verdadero</button>
+                    <button class="answer-button duabtn txt" onclick="corregir3(4, true)" type="button">Falso</button>
+                    <h3 class="bot" id="correcion_4"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Comparar2_5.png" alt="XD">
+                <div class="check-container">
+                    <button class="answer-button duabtn txt" onclick="corregir3(5, false)" type="button">Verdadero</button>
+                    <button class="answer-button duabtn txt" onclick="corregir3(5, true)" type="button">Falso</button>
+                    <h3 class="bot" id="correcion_5"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Comparar2_6.png" alt="XD">
+                <div class="check-container">
+                    <button class="answer-button duabtn txt" onclick="corregir3(6, true)" type="button">Verdadero</button>
+                    <button class="answer-button duabtn txt" onclick="corregir3(6, false)" type="button">Falso</button>
+                    <h3 class="bot" id="correcion_6"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Comparar2_7.png" alt="XD">
+                <div class="check-container">
+                    <button class="answer-button duabtn txt" onclick="corregir3(7, true)" type="button">Verdadero</button>
+                    <button class="answer-button duabtn txt" onclick="corregir3(7, false)" type="button">Falso</button>
+                    <h3 class="bot" id="correcion_7"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Comparar2_8.png" alt="XD">
+                <div class="check-container">
+                    <button class="answer-button duabtn txt" onclick="corregir3(8, false)" type="button">Verdadero</button>
+                    <button class="answer-button duabtn txt" onclick="corregir3(8, true)" type="button">Falso</button>
+                    <h3 class="bot" id="correcion_8"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Comparar2_9.png" alt="XD">
+                <div class="check-container">
+                    <button class="answer-button duabtn txt" onclick="corregir3(9, false)" type="button">Verdadero</button>
+                    <button class="answer-button duabtn txt" onclick="corregir3(9, true)" type="button">Falso</button>
+                    <h3 class="bot" id="correcion_9"></h3>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <img class="question-image" src="static\Comparar2_10.png" alt="XD">
+                <div class="check-container">
+                    <button class="answer-button duabtn txt" onclick="corregir3(10, true)" type="button">Verdadero</button>
+                    <button class="answer-button duabtn txt" onclick="corregir3(10, false)" type="button">Falso</button>
+                    <h3 class="bot" id="correcion_10"></h3>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a id="finish" href="/actualizando" style="display: block;" class="nivel duabtn txt" data-value="9">finalizar</a>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('a.nivel').on('click', function(event) {
+      event.preventDefault();
+      var nivel = $(this).data('value');
+      window.location.href = '/actualizando?nivel=' + nivel;
+    });
+  });
+</script>
+            </div>
+    </div>
+</body>
+
+</html>

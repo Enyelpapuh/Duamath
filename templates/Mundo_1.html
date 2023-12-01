@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="static\styles.css" rel="stylesheet">
+    <title>Mundo 1!</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Ejemplos para el mundo 1</h1>
+    </div>
+
+
+    <!-- Contenedor de las divisiones -->
+
+        <div id="pasos">
+            <div class="paso" id="paso1">
+                <div class="section">
+                    <h1>Numeros</h1>
+                    <img src="static\Mundo0.png" alt="XD">
+                </div>
+            </div>
+
+            <div class="paso" id="paso2">
+                <div class="section">
+                    <h1>Signos</h1>
+                    <img src="static\Mundo0Signos.png" alt="XD">
+                </div>
+            </div>
+        </div>
+                <!-- ... Agregar más pasos si es necesario -->
+                <div class="footer">
+                    <!-- Botones de control -->
+                    <button class="duabtn txt" id="retroceder" onclick="retroceder()">Retroceder</button>
+                    <button class="duabtn txt" id="continuar" onclick="continuar()">Continuar</button>
+
+
+                    <div class="footer">
+                        <a id="finish" href="/actualizando" style="display: block;" class="nivel duabtn txt" data-value="1">Finalizar</a>
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('a.nivel').on('click', function(event) {
+              event.preventDefault();
+              var nivel = $(this).data('value');
+              window.location.href = '/actualizando?nivel=' + nivel;
+            });
+          });
+        </script>
+                    </div>
+        
+                </div>
+            
+                <script>
+                    // Obtener todas las divisiones (pasos)
+                    const pasos = document.querySelectorAll('.paso');
+                    let pasoActual = 0;
+            
+                    // Función para retroceder
+                    function retroceder() {
+                        if (pasoActual > 0) {
+                            pasoActual--;
+                            mostrarPaso();
+                        }
+                    }
+            
+                    // Función para continuar
+                    function continuar() {
+                        if (pasoActual < pasos.length - 1) {
+                            pasoActual++;
+                            mostrarPaso();
+                        }
+                    }
+            
+                    // Función para mostrar el paso actual
+                    function mostrarPaso() {
+                        pasos.forEach((paso, index) => {
+                            if (index === pasoActual) {
+                                paso.style.display = 'block';
+                            } else {
+                                paso.style.display = 'none';
+                                paso.style.margin = 'auto';
+                            }
+                        });
+            
+                        // Mostrar o ocultar botones según el paso actual
+                        if (pasoActual === 0) {
+                            document.getElementById('retroceder').style.display = 'none';
+                        } else {
+                            document.getElementById('retroceder').style.display = 'inline-block';
+                        }
+            
+                        if (pasoActual === pasos.length - 1) {
+                            document.getElementById('continuar').style.display = 'none';
+                            document.getElementById('finish').style.display = 'inline-block';
+                        } else {
+                            document.getElementById('continuar').style.display = 'inline-block';
+                            document.getElementById('finish').style.display = 'none';
+                        }
+                    }
+            
+                    // Mostrar el primer paso al cargar la página
+                    mostrarPaso();
+            
+                    // Función para finalizar (en el último paso)
+                    function finalizar() {
+                        // Lógica para finalizar aquí
+                        alert('Proceso finalizado');
+                    }
+                </script>
+            
+</body>
+
+</html>

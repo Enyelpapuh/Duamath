@@ -1,0 +1,75 @@
+{% extends "privado.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+
+{% block main %}
+<form action="/inicio" method="post">
+    <div class="main">
+            <h1>Bienvenido {{username}}</h1>
+      </div>
+
+    <div class="d-flex justify-content-evenly flex-column flex-md-row justify-content-center">
+        <div class="slider_public">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <a href="https://www.youtube.com/" target="_blank">
+                          <img src="https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2021/06/14/among-us.jpeg" class="d-block w-100 img-fluid" alt="imagen 1">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="https://www.youtube.com/" target="_blank">
+                          <img src="https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2021/06/14/among-us.jpeg" class="d-block w-100 img-fluid" alt="imagen 2">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="https://www.youtube.com/" target="_blank">
+                          <img src="https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2021/06/14/among-us.jpeg" class="d-block w-100 img-fluid" alt="imagen 3">
+                      </a>
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+         
+      </div>
+
+        <div class="d-flex flex-column justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.elespectador.com/resizer/qFO8p6usEUmhI9dExMtBHbLd2KU=/525x350/filters:quality(60):format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/BOP5BVFGYBDMDK4J5B7YQ3VOUM.jpg" class="card-img-top" alt="no imagen (aventura)">
+            <div class="card-body">
+
+            <p class="card-text">ven y descubre un mundo lleno de numeros, los cuales te estallaran la cabeza.</p>
+            <a href="/clase" class="duabtn txt">A la aventura</a>
+            </div>
+        </div>
+
+          <div class="card" style="width: 18rem;">
+              <img src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2023/08/08/16914915339159.jpg" class="card-img-top" alt="no imagen (ver mapa)">
+              <div class="card-body">
+
+              <p class="card-text">Continua con la aventura y avanza para ser el mejor.</p>
+              <a href="/progreso" class="duabtn txt">Ver mapa</a>
+              </div>
+          </div>
+        
+        <div class="mivi">
+            <h1>mision</h1>
+            <p>impsu text sdsdsdsdsdsdsd</p>
+            <h1>vision</h1>
+            <p>impusn text xdxdxdxdxd</p>
+          </div>
+    </div>
+</div>
+</form>
+{% endblock %}
+

@@ -1,0 +1,108 @@
+/* Cambiar el color de fondo y el color de texto para la barra de navegación */
+.navbar.bg-color {
+    background-color: #7b6CAD; /* Cambiar a tu color deseado */
+}
+
+/*
+#9777F5 --> morado mas clarito
+#B9ABEB --> morado claro
+ --> morado mas oscurito
+*/
+
+.d-flex{
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.card{
+    margin-top: 10px;
+    padding: 16px 0;
+}
+
+body {
+    padding-bottom: 70px; /* Ajusta el valor según sea necesario para dejar espacio para el footer */
+    margin-bottom: 0; /* Evita el margen inferior predeterminado del cuerpo */
+    position: relative;
+    min-height: 100vh; /* Hace que el cuerpo ocupe al menos el tamaño de la ventana */
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px 0;
+  }
+/* estilos para cambiar el color del login and register */
+.btn-primary {
+    color: #fff;
+    background-color: #9777F5;
+    border-color: #8567DD;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #B9ABEB;
+    border-color: #8567DD;
+}
+
+.d-flex{
+    display: flex;
+    align-items: flex-start;
+  }
+  .duabtn {
+    all: unset;
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 17px;
+  }
+  
+/* Important stuff below */
+.duabtn.txt {
+    background-color: #7b6CAD;
+    box-shadow: 0 5px 0 #5c4f88; 
+    margin-top: 16px;
+    width: 75%;
+    height: 20px;
+  }
+  
+  .duabtn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+.formulario{
+  width: 360px;
+  height: 60%;
+  background-color: #9a78ff;
+  border-radius: 16px;
+  padding: 16px 16px;
+  align-items: center;
+  margin: auto;
+}
+.inputform{
+  padding: 0px 0px 20px 20px;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.alert-info {
+  color: #055160;
+  background-color: #ff2d2d;
+  border-color: #5f003d;
+  border-radius: 1px;
+}
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}

@@ -1,0 +1,35 @@
+{% extends "publico.html" %}
+
+{% block title %}
+Log In
+{% endblock %}
+
+{% block main %}
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class="flash-messages">
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+<h1>Inicia Sesion</h1>
+<form form="/login" class="login-form" method="post">
+  <div class="formulario">
+    <div class="mb-3">
+      <input autocomplete="off" autofocus class="inputform" id="username" name="username" placeholder="Username"
+        type="text">
+    </div>
+    <div class="mb-3">
+      <input class="inputform" id="password" name="password" placeholder="Password" type="password">
+    </div>
+    <button class="duabtn txt">login</button>
+    <div class="py-5">
+      <p class="message">No estas registrado? <a style="color: white;" href="/register">Crea una cuenta</p>
+    </div>
+    </div>
+</form>
+
+{% endblock %}

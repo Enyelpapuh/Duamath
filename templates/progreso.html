@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <link rel="stylesheet" href="/static/progreso.css">
+    <title>DuoMath: {% block title %}{% endblock %}</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">DuoMath</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="/login">login</a>
+            <a class="nav-link" href="/register">Register</a>
+            <a class="nav-link" href="/inicio">inicio</a>
+
+            <a class="nav-link disabled">no disponible</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-image">
+      <!-- Contenedor con la barra de progreso -->
+      <div class="container py-5">
+        <div class="progreso_mapa">
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+
+      <div class="levels d-flex justify-content-evenly container-fluid py-5 text-center">
+        <div>
+          <a href="/nivel1" class="level1">mundo 1</a>
+          <a href="/nivel1_1" class="lvl">1</a>
+          <a href="/nivel1_2" class="lvl">2</a>
+          <a href="/nivel1_3" class="lvl">3</a>
+        </div>
+
+        <div>
+          <a href="/nivel2" class="level2">mundo2</a>
+          <a href="/nivel2_1" class="lvl">1</a>
+          <a href="/nivel2_2" class="lvl">2</a>
+          <a href="/nivel2_3" class="lvl">3</a>
+        </div>
+
+        <div>
+          <a href="/nivel3" class="level3"> mundo3</a>
+          <a href="/nivel3_1" class="lvl">1</a>
+          <a href="/nivel3_2" class="lvl">2</a>
+          <a href="/nivel3_3" class="lvl">3</a>
+        </div>
+
+        <div>
+          <a href="/nivel4" class="level4">mundo4</a>
+          <a href="/nivel4_1" class="lvl">1</a>
+          <a href="/nivel4_2" class="lvl">2</a>
+          <a href="/nivel4_3" class="lvl">3</a>
+        </div>
+      </div>
+  </body>
+
+</html>

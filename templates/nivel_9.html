@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="static\styles.css" rel="stylesheet">
+    <title>Mundo 1!</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Ejemplos para el mundo 1</h1>
+    </div>
+
+
+    <!-- Contenedor de las divisiones -->
+
+        <div id="pasos">
+            <div class="paso" id="paso1">
+                <script>
+                    // Respuestas para cada pregunta
+                    const respuestas1 = {
+                        1: "=",
+                        2: "<",
+                        3: ">",
+                        4: ">",
+                        5: ">",
+                        6: ">",
+                        7: "<",
+                        8: "<",
+                        9: ">",
+                        10: ">",
+                        11: ">",
+                        12: ">"
+                    };
+            
+                    function corregir1(id) {
+                        let input1 = document.querySelector("#answer1_" + id);
+                        let correction1 = document.querySelector("#correcion1_" + id);
+            
+                        if (input1.value.toUpperCase() == respuestas1[id]) {
+                            input1.style = "background-color: GREEN; color: #fff";
+                            correction1.innerHTML = "Correcto";
+                        } else {
+                            input1.style = "background-color: RED; color: #fff";
+                            correction1.innerHTML = "Incorrecto";
+                        }
+                    }
+                </script>
+                <div class="container">
+                    <div class="section">
+                        <h2>Signos de mayor, menor o igual</h2>
+                        <hr>
+                        <h3>Indique el signo correspondiente en el espacio en blanco</h3>
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos1_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_1">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(1)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_1"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos2_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_2">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(2)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_2"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos3_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_3">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(3)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_3"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos4_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_4">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(4)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_4"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos5_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_5">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(5)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_5"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos6_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_6">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(6)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_6"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos7_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_7">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(7)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_7"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos8_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_8">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(8)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_8"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos9_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_9">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(9)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_9"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos10_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_10">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(10)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_10"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos11_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_11">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(11)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_11"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signos12_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer1_12">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir1(12)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_12"></h3>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="paso" id="paso2">
+                <script>
+                    // Respuestas para cada pregunta
+                    const respuestas2 = {
+                        1: "1",
+                        2: "6",
+                        3: "7",
+                        4: "4",
+                        5: "5",
+                        6: "12",
+                        7: "3",
+                        8: "1",
+                        9: "9",
+                        10: "4"
+                    };
+            
+                    function corregir2(id) {
+                        let input2 = document.querySelector("#answer_" + id);
+                        let correction2 = document.querySelector("#correcion_" + id);
+            
+                        if (input2.value.toUpperCase() == respuestas2[id]) {
+                            input2.style = "background-color: GREEN; color: #fff";
+                            correction2.innerHTML = "Correcto";
+                        } else {
+                            input2.style = "background-color: RED; color: #fff";
+                            correction3.innerHTML = "Incorrecto";
+                        }
+                    }
+                </script>
+                <div class="container">
+                    <div class="section">
+                        <h2>Sumar y Restar</h2>
+                        <hr>
+                        <h3>Indique el resultado en el espacio en blanco</h3>
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Suma_Resta_1_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer_1">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir2(1)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_1"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Suma_Resta_2_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer_2">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir2(2)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_2"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Suma_Resta_3_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer_3">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir2(3)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_3"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Suma_Resta_4_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer_4">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir2(4)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_4"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Suma_Resta_5_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer_5">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir2(5)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_5"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Suma_Resta_6_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer_6">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir2(6)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_6"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Suma_Resta_7_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer_7">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir2(7)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_7"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Suma_Resta_8_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer_8">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir2(8)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_8"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Suma_Resta_9_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer_9">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir2(9)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_9"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Suma_Resta_10_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer_10">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir2(10)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion_10"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paso" id="paso3">
+                <script>
+                    // Respuestas para cada pregunta
+                    const respuestas3 = {
+                        1: "+",
+                        2: "-",
+                        3: "+",
+                        4: "-",
+                        5: "+",
+                        6: "+",
+                        7: "-",
+                        8: "-",
+                        9: "-",
+                        10: "-",
+                        11: "-",
+                        12: "+"
+                    };
+            
+                    function corregir3(id) {
+                        let input3 = document.querySelector("#answer3_" + id);
+                        let correction3 = document.querySelector("#correcion3_" + id);
+            
+                        if (input3.value.toUpperCase() == respuestas3[id]) {
+                            input3.style = "background-color: GREEN; color: #fff";
+                            correction3.innerHTML = "Correcto";
+                        } else {
+                            input3.style = "background-color: RED; color: #fff";
+                            correction3.innerHTML = "Incorrecto";
+                        }
+                    }
+                </script>
+            
+                <div class="container">
+                    <div class="section">
+                        <h2>Signos de suma o resta</h2>
+                        <hr>
+                        <h3>Indique el signo correspondiente en el espacio en blanco</h3>
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_1_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_1">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(1)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_1"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_2_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_2">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(2)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_2"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_3_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_3">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(3)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_3"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_4_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_4">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(4)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_4"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_5_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_5">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(5)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_5"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_6_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_6">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(6)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_6"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_7_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_7">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(7)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_7"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_8_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_8">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(8)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_8"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_9_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_9">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(9)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_9"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_10_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_10">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(10)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_10"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_11_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_11">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(11)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_11"></h3>
+                            </div>
+                        </div>
+            
+                        <div class="question-container">
+                            <img class="Imgclases3" src="static\Signo_Suma_12_C9.png" alt="XD">
+                            <input class="answer-input" type="text" placeholder="" id="answer3_12">
+                            <div class="check-container">
+                                <button class="check-button" onclick="corregir3(12)" type="button">Verificar</button>
+                                <h3 class="bot" id="correcion3_12"></h3>
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                </div>
+            </div>
+
+
+        </div>
+                <!-- ... Agregar más pasos si es necesario -->
+                <div class="footer">
+                    <!-- Botones de control -->
+                    <button class="duabtn txt" id="retroceder" onclick="retroceder()">Retroceder</button>
+                    <button class="duabtn txt" id="continuar" onclick="continuar()">Continuar</button>
+
+
+                    <div class="footer">
+                        <!-- Botones de control -->
+                  <a id="finish" class="duabtn txt" style="display: block;" href="/progreso">Finish</a>
+              
+                </div>
+        
+                </div>
+            
+                <script>
+                    // Obtener todas las divisiones (pasos)
+                    const pasos = document.querySelectorAll('.paso');
+                    let pasoActual = 0;
+            
+                    // Función para retroceder
+                    function retroceder() {
+                        if (pasoActual > 0) {
+                            pasoActual--;
+                            mostrarPaso();
+                        }
+                    }
+            
+                    // Función para continuar
+                    function continuar() {
+                        if (pasoActual < pasos.length - 1) {
+                            pasoActual++;
+                            mostrarPaso();
+                        }
+                    }
+            
+                    // Función para mostrar el paso actual
+                    function mostrarPaso() {
+                        pasos.forEach((paso, index) => {
+                            if (index === pasoActual) {
+                                paso.style.display = 'block';
+                            } else {
+                                paso.style.display = 'none';
+                                paso.style.margin = 'auto';
+                            }
+                        });
+            
+                        // Mostrar o ocultar botones según el paso actual
+                        if (pasoActual === 0) {
+                            document.getElementById('retroceder').style.display = 'none';
+                        } else {
+                            document.getElementById('retroceder').style.display = 'inline-block';
+                        }
+            
+                        if (pasoActual === pasos.length - 1) {
+                            document.getElementById('continuar').style.display = 'none';
+                            document.getElementById('finish').style.display = 'inline-block';
+                        } else {
+                            document.getElementById('continuar').style.display = 'inline-block';
+                            document.getElementById('finish').style.display = 'none';
+                        }
+                    }
+            
+                    // Mostrar el primer paso al cargar la página
+                    mostrarPaso();
+            
+                    // Función para finalizar (en el último paso)
+                    function finalizar() {
+                        // Lógica para finalizar aquí
+                        alert('Proceso finalizado');
+                    }
+                </script>
+            
+</body>
+
+</html>

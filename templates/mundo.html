@@ -1,0 +1,40 @@
+{% extends "privado.html" %}
+
+{% block title %}
+    info mundo
+{% endblock %}
+
+{% block link%}
+<link rel="stylesheet" href="/static/progreso.css">
+<style>
+    /* Estilos para ocultar las secciones */
+    .seccion {
+        display: none;
+    }
+</style>
+
+{%endblock%}
+
+
+{% block main %}
+
+<div class="seccion" id="seccion1">Contenido de la sección 1</div>
+<div class="seccion" id="seccion2">Contenido de la sección 2</div>
+<div class="seccion" id="seccion3">Contenido de la sección 3</div>
+<div class="seccion" id="seccion4">Contenido de la sección 4</div>
+<!-- ...otras secciones... -->
+
+<script>
+    // Obtener el parámetro 'seccion' de la URL
+    const seccion = '{{ seccion }}';
+
+    // Mostrar la sección correspondiente
+    if (seccion) {
+        const seccionAMostrar = document.getElementById('seccion' + seccion);
+        if (seccionAMostrar) {
+            seccionAMostrar.style.display = 'block';
+        }
+    }
+</script>
+
+{% endblock %}

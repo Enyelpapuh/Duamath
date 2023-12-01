@@ -1,0 +1,557 @@
+{% extends "publico.html" %}
+
+{% block title %}
+    Progreso
+{%endblock%}
+
+{% block link%}
+<link rel="stylesheet" href="/static/progreso.css">
+{%endblock%}
+
+{%block main%}
+
+<div>
+  <div id="acceso"class="{{ acceso }}" style="display: none;" ></div>
+     
+  <h1> Completa los niveles</h1>
+
+    <div class="cuerpo">
+    <div class="levels d-flex justify-content-evenly container-fluid py-5 text-center">
+      
+    
+      <button class=" lvl mundo uno" onclick="numero()" id="numero" ><img class="uwu" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/5b531828e59ae83aadb3d88e6b3a98a8.svg"></button>
+        <button class=" lvl button dos" onclick="ventanaclose()" id="miBoton1" value="1"> <img class="_1reas" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/261caf5e7127c22944a432ef5c191cfa.svg"></button>
+        <button class="lvl button tres" onclick="ventanaclose()" id="miBoton2" value="2"> <img class="_1reas" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/261caf5e7127c22944a432ef5c191cfa.svg"></button>
+    
+      <button class=" lvl mundo uno" onclick="suma()" id="suma" ><img class="uwu" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/5b531828e59ae83aadb3d88e6b3a98a8.svg"></button>
+        <button class=" lvl button dos" onclick="ventanaclose()" id="miBoton3" value="3"> <img class="_1reas" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/261caf5e7127c22944a432ef5c191cfa.svg"></button>
+        <button class="lvl button tres" onclick="ventanaclose()" id="miBoton4" value="4"> <img class="_1reas" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/261caf5e7127c22944a432ef5c191cfa.svg"></button>
+     
+      <button class=" lvl mundo uno" onclick="resta()" id="resta" ><img class="uwu" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/5b531828e59ae83aadb3d88e6b3a98a8.svg"></button>
+        <button class=" lvl button dos" onclick="ventanaclose()" id="miBoton5" value="5"> <img class="_1reas" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/261caf5e7127c22944a432ef5c191cfa.svg"></button>
+        <button class="lvl button tres" onclick="ventanaclose()" id="miBoton6" value="6"> <img class="_1reas" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/261caf5e7127c22944a432ef5c191cfa.svg"></button>
+      
+      <button class=" lvl mundo uno" onclick="signos()" id="signos" ><img class="uwu" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/5b531828e59ae83aadb3d88e6b3a98a8.svg"></button>
+        <button class=" lvl button dos" onclick="ventanaclose()" id="miBoton7" value="7"> <img class="_1reas" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/261caf5e7127c22944a432ef5c191cfa.svg"></button>
+        <button class="lvl button tres" onclick="ventanaclose()" id="miBoton8" value="8"><img class="_1reas" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/261caf5e7127c22944a432ef5c191cfa.svg"></button>
+    
+        <button class="lvl button uno" onclick="ventanaclose()" id="miBoton9" value="9"><img class="_1reas" draggable="false" src="https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/261caf5e7127c22944a432ef5c191cfa.svg"></button>
+    
+    </div>
+    <div class="inicia">
+      <div class="mensaje">
+        <h1>Quieres Guardar tu progreso?</h1>
+        <p>inicia sesion para guardar tu avance</p>
+
+          <a href="/login" class="duabtn txt">Iniciar sesion</a>
+          <a href="/register" class="duabtn txt">Registrate</a>
+      </div>
+      <div class="mensaje1">
+          <h1>mision</h1>
+          <p>quieres sabes la mision de esta pagina</p>
+          <a href="/mision" class="duabtn txt">mision</a>
+      </div>
+      <div class="mensaje1">
+        <h1>mision</h1>
+        <p>que vision tenemos con esta pagina</p>
+        <a href="/vision" class="duabtn txt">vision</a>
+      </div>
+  </div>
+
+</div>
+    <!--venta emergente de los mundo-->
+    <div id="ventananumero" class="ventana">
+      <span onclick="cerrarnumero()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>Los numeros</h2>
+        <p>algo sencillo no?</p>
+        <a class="duabtn txt" href="/mundo1_p" >numero</a>
+      </div>
+    </div>
+    
+    <div id="ventanasuma" class="ventana">
+      <span onclick="cerrarsuma()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>La suma</h2>
+        <p>Sumar los numeros son dificiles?</p>
+        <a class="duabtn txt" href="/mundo2_p">vamos</a>
+      </div>
+    </div>
+    
+    <div id="ventanaresta" class="ventana">
+      <span onclick="cerrarresta()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>La resta</h2>
+        <p>No puedo restar</p>
+        <a class="duabtn txt" href="/mundo3_p">vamos</a>
+      </div>
+    </div>
+    
+    <div id="ventanasignos" class="ventana">
+      <span onclick="cerrarsignos()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>los signos</h2>
+        <p>Nunca logre diferenciarlos</p>
+        <a class="duabtn txt" href="/mundo4_p">vamos</a>
+      </div>
+    </div>
+    
+    <!-- El div que actuará como ventana emergente -->
+    <div id="ventanaEmergente1" class="ventana">
+      <span onclick="cerrarVentana1()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>Nivel 1</h2>
+        <p>demuestra lo que aprendiste</p>
+        <a class="duabtn txt" href="/nivel1_p">vamos</a>
+      </div>
+    </div>
+    
+    <div id="ventanaEmergente2" class="ventana">
+      <span onclick="cerrarVentana2()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>Nivel 2</h2>
+        <p>demuestra lo que aprendiste</p>
+        <a class="duabtn txt" href="/nivel2_p">vamos</a>
+      </div>
+    </div>
+    
+    <div id="ventanaEmergente3" class="ventana">
+      <span onclick="cerrarVentana3()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>Nivel 3</h2>
+        <p>demuestra lo que aprendiste</p>
+        <a class="duabtn txt" href="/nivel3_p">vamos</a>
+      </div>
+    </div>
+    
+    <div id="ventanaEmergente4" class="ventana">
+      <span onclick="cerrarVentana4()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>Nivel 4</h2>
+        <p>demuestra lo que aprendiste</p>
+        <a class="duabtn txt" href="/nivel4_p">vamos</a>
+      </div>
+    </div>
+    
+    <div id="ventanaEmergente5" class="ventana">
+      <span onclick="cerrarVentana5()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>Nivel 5</h2>
+        <p>demuestra lo que aprendiste</p>
+        <a class="duabtn txt" href="/nivel5_p">vamos</a>
+      </div>
+    </div>
+    
+    <div id="ventanaEmergente6" class="ventana">
+      <span onclick="cerrarVentana6()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>Nivel 6</h2>
+        <p>demuestra lo que aprendiste</p>
+        <a class="duabtn txt" href="/nivel6_p">vamos</a>
+      </div>
+    </div>
+    
+    <div id="ventanaEmergente7" class="ventana">
+      <span onclick="cerrarVentana7()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>Nivel 7</h2>
+        <p>demuestra lo que aprendiste</p>
+        <a class="duabtn txt" href="/nivel7_p">vamos</a>
+      </div>
+    </div>
+    
+    <div id="ventanaEmergente8" class="ventana">
+      <span onclick="cerrarVentana8()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>Nivel 8</h2>
+        <p>demuestra lo que aprendiste</p>
+        <a class="duabtn txt" href="/nivel8_p">vamos</a>
+      </div>
+    </div>
+    
+    <div id="ventanaEmergente9" class="ventana">
+      <span onclick="cerrarVentana9()" class="cerrar">X</span>
+      <div class="txtemergente">
+        <h2>Nivel final</h2>
+        <p>Demuestra de lo que estas hecho</p>
+        <a class="duabtn txt" href="/nivel_9">vamos</a>
+      </div>
+    </div>
+    
+    <div id="ventanaclose" class="ventana">
+      <span onclick="cerrar_ventana_close()" class="cerrar">X</span>
+      <p>completa el nivel anterior</p>
+      <button class="btnclose">close</button>
+    </div>
+    
+    <script>
+      var progreso = 9;
+    
+      document.addEventListener("DOMContentLoaded", function () {
+        const miBoton1 = document.getElementById("miBoton1");
+        const miBoton2 = document.getElementById("miBoton2");
+        const miBoton3 = document.getElementById("miBoton3");
+        const miBoton4 = document.getElementById("miBoton4");
+        const miBoton5 = document.getElementById("miBoton5");
+        const miBoton6 = document.getElementById("miBoton6");
+        const miBoton7 = document.getElementById("miBoton7");
+        const miBoton8 = document.getElementById("miBoton8");
+        const miBoton9 = document.getElementById("miBoton9");
+    
+    
+        const numero = document.getElementById("numero");
+        const suma = document.getElementById("suma");
+        const resta = document.getElementById("resta");
+        const signos = document.getElementById("signos");
+    
+    
+        let valor1 = parseInt(miBoton1.value);
+        let valor2 = parseInt(miBoton2.value);
+        let valor3 = parseInt(miBoton3.value);
+        let valor4 = parseInt(miBoton4.value);
+        let valor5 = parseInt(miBoton5.value);
+        let valor6 = parseInt(miBoton6.value);
+        let valor7 = parseInt(miBoton7.value);
+        let valor8 = parseInt(miBoton8.value);
+        let valor9 = parseInt(miBoton9.value);
+    
+        if (progreso < valor1) {
+          miBoton1.classList.add("block");
+        } else {
+    
+         // Crear un nuevo botón
+    var nuevoBoton = document.createElement('button');
+    nuevoBoton.className = 'botonEmergente lvl dos button';
+    nuevoBoton.onclick = mostrarVentana1; // Asignar la función al evento onclick
+    nuevoBoton.value = miBoton1.value;
+    
+    // Crear la etiqueta img
+    var nuevaImagen = document.createElement('img');
+    nuevaImagen.className = '_1reas';
+    nuevaImagen.draggable = false;
+    nuevaImagen.src = 'https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/ef9c771afdb674f0ff82fae25c6a7b0a.svg';
+    
+    // Agregar la imagen como hijo del botón
+    nuevoBoton.appendChild(nuevaImagen);
+    
+    // Reemplazar el botón existente con el nuevo botón
+    miBoton1.parentNode.replaceChild(nuevoBoton, miBoton1);
+    
+        }
+        if (progreso < valor2) {
+          miBoton2.classList.add("block");
+        } else {
+    
+          // Crear un nuevo botón
+          var nuevoBoton = document.createElement('button');
+          nuevoBoton.className = 'botonEmergente lvl tres button';
+          nuevoBoton.onclick = mostrarVentana2; // Asignar la función al evento onclick
+          nuevoBoton.value = miBoton2.value;
+          // Crear la etiqueta img
+          var nuevaImagen = document.createElement('img');
+          nuevaImagen.className = '_1reas';
+          nuevaImagen.draggable = false;
+          nuevaImagen.src = 'https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/ef9c771afdb674f0ff82fae25c6a7b0a.svg';
+    
+          // Agregar la imagen como hijo del botón
+          nuevoBoton.appendChild(nuevaImagen);
+          miBoton2.parentNode.replaceChild(nuevoBoton, miBoton2);
+        }
+        if (progreso < valor3) {
+          miBoton3.classList.add("block");
+        }
+        else {
+    
+          // Crear un nuevo botón
+          var nuevoBoton = document.createElement('button');
+          nuevoBoton.textContent = '3';
+          nuevoBoton.className = 'botonEmergente lvl dos button';
+          // Agregar la clase al nuevo botón
+          nuevoBoton.onclick = mostrarVentana3; // Asignar la función al evento onclick
+          // Copiar los valores de los atributos del botón existente al nuevo botón
+          nuevoBoton.value = miBoton3.value;
+          // Reemplazar el botón existente con el nuevo botón
+          // Crear la etiqueta img
+          var nuevaImagen = document.createElement('img');
+          nuevaImagen.className = '_1reas';
+          nuevaImagen.draggable = false;
+          nuevaImagen.src = 'https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/ef9c771afdb674f0ff82fae25c6a7b0a.svg';
+    
+          // Agregar la imagen como hijo del botón
+          nuevoBoton.appendChild(nuevaImagen);
+          miBoton3.parentNode.replaceChild(nuevoBoton, miBoton3);
+        }
+        if (progreso < valor4) {
+          miBoton4.classList.add("block");
+        }
+    
+        else {
+    
+          // Crear un nuevo botón
+          var nuevoBoton = document.createElement('button');
+          nuevoBoton.textContent = '4';
+          nuevoBoton.className = 'botonEmergente lvl tres button';
+          // Agregar la clase al nuevo botón
+          nuevoBoton.onclick = mostrarVentana4; // Asignar la función al evento onclick
+          // Copiar los valores de los atributos del botón existente al nuevo botón
+          nuevoBoton.value = miBoton4.value;
+          // Crear la etiqueta img
+          var nuevaImagen = document.createElement('img');
+          nuevaImagen.className = '_1reas';
+          nuevaImagen.draggable = false;
+          nuevaImagen.src = 'https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/ef9c771afdb674f0ff82fae25c6a7b0a.svg';
+    
+          // Agregar la imagen como hijo del botón
+          nuevoBoton.appendChild(nuevaImagen);
+          // Reemplazar el botón existente con el nuevo botón
+          miBoton4.parentNode.replaceChild(nuevoBoton, miBoton4);
+        }
+        if (progreso < valor5) {
+          miBoton5.classList.add("block");
+        }
+    
+        else {
+          // Crear un nuevo botón
+          var nuevoBoton = document.createElement('button');
+          nuevoBoton.textContent = '5';
+          nuevoBoton.className = 'botonEmergente lvl dos button';
+          // Agregar la clase al nuevo botón
+          nuevoBoton.onclick = mostrarVentana5; // Asignar la función al evento onclick
+          // Copiar los valores de los atributos del botón existente al nuevo botón
+          nuevoBoton.value = miBoton5.value;
+          // Crear la etiqueta img
+          var nuevaImagen = document.createElement('img');
+          nuevaImagen.className = '_1reas';
+          nuevaImagen.draggable = false;
+          nuevaImagen.src = 'https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/ef9c771afdb674f0ff82fae25c6a7b0a.svg';
+    
+          // Agregar la imagen como hijo del botón
+          nuevoBoton.appendChild(nuevaImagen);
+          // Reemplazar el botón existente con el nuevo botón
+          miBoton5.parentNode.replaceChild(nuevoBoton, miBoton5);
+        }
+        if (progreso < valor6) {
+          miBoton6.classList.add("block");
+        }
+    
+        else {
+    
+          // Crear un nuevo botón
+          var nuevoBoton = document.createElement('button');
+          nuevoBoton.textContent = '6';
+          nuevoBoton.className = 'botonEmergente lvl tres button';
+          // Agregar la clase al nuevo botón
+          nuevoBoton.onclick = mostrarVentana6; // Asignar la función al evento onclick
+          // Copiar los valores de los atributos del botón existente al nuevo botón
+          nuevoBoton.value = miBoton6.value;
+          // Crear la etiqueta img
+          var nuevaImagen = document.createElement('img');
+          nuevaImagen.className = '_1reas';
+          nuevaImagen.draggable = false;
+          nuevaImagen.src = 'https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/ef9c771afdb674f0ff82fae25c6a7b0a.svg';
+    
+          // Agregar la imagen como hijo del botón
+          nuevoBoton.appendChild(nuevaImagen);
+          // Reemplazar el botón existente con el nuevo botón
+          miBoton6.parentNode.replaceChild(nuevoBoton, miBoton6);
+        }
+        if (progreso < valor7) {
+          miBoton7.classList.add("block");
+        }
+    
+        else {
+    
+          // Crear un nuevo botón
+          var nuevoBoton = document.createElement('button');
+          nuevoBoton.textContent = '7';
+          nuevoBoton.className = 'botonEmergente lvl dos button';
+          // Agregar la clase al nuevo botón
+          nuevoBoton.onclick = mostrarVentana7; // Asignar la función al evento onclick
+          // Copiar los valores de los atributos del botón existente al nuevo botón
+          nuevoBoton.value = miBoton7.value;
+          // Crear la etiqueta img
+          var nuevaImagen = document.createElement('img');
+          nuevaImagen.className = '_1reas';
+          nuevaImagen.draggable = false;
+          nuevaImagen.src = 'https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/ef9c771afdb674f0ff82fae25c6a7b0a.svg';
+    
+          // Agregar la imagen como hijo del botón
+          nuevoBoton.appendChild(nuevaImagen);
+          // Reemplazar el botón existente con el nuevo botón
+          miBoton7.parentNode.replaceChild(nuevoBoton, miBoton7);
+        }
+        if (progreso < valor8) {
+          miBoton8.classList.add("block");
+        }
+    
+        else {
+    
+          // Crear un nuevo botón
+          var nuevoBoton = document.createElement('button');
+          nuevoBoton.textContent = '8';
+          nuevoBoton.className = 'botonEmergente lvl tres button';
+          // Agregar la clase al nuevo botón
+          nuevoBoton.onclick = mostrarVentana8; // Asignar la función al evento onclick
+          // Copiar los valores de los atributos del botón existente al nuevo botón
+          nuevoBoton.value = miBoton8.value;
+          // Crear la etiqueta img
+          var nuevaImagen = document.createElement('img');
+          nuevaImagen.className = '_1reas';
+          nuevaImagen.draggable = false;
+          nuevaImagen.src = 'https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/ef9c771afdb674f0ff82fae25c6a7b0a.svg';
+    
+          // Agregar la imagen como hijo del botón
+          nuevoBoton.appendChild(nuevaImagen);
+          // Reemplazar el botón existente con el nuevo botón
+          miBoton8.parentNode.replaceChild(nuevoBoton, miBoton8);
+        }
+    
+        if (progreso < valor9) {
+          miBoton9.classList.add("block");
+        }
+    
+        else {
+    
+          // Crear un nuevo botón
+          var nuevoBoton = document.createElement('button');
+          nuevoBoton.textContent = '9';
+          nuevoBoton.className = 'botonEmergente lvl uno button';
+          // Agregar la clase al nuevo botón
+          nuevoBoton.onclick = mostrarVentana9; // Asignar la función al evento onclick
+          // Copiar los valores de los atributos del botón existente al nuevo botón
+          nuevoBoton.value = miBoton9.value;
+          // Crear la etiqueta img
+          var nuevaImagen = document.createElement('img');
+          nuevaImagen.className = '_1reas';
+          nuevaImagen.draggable = false;
+          nuevaImagen.src = 'https://d35aaqx5ub95lt.cloudfront.net/images/path/icons/ef9c771afdb674f0ff82fae25c6a7b0a.svg';
+    
+          // Agregar la imagen como hijo del botón
+          nuevoBoton.appendChild(nuevaImagen);
+          // Reemplazar el botón existente con el nuevo botón
+          miBoton9.parentNode.replaceChild(nuevoBoton, miBoton9);
+        }
+    
+      });
+      function numero() {
+        var ventanaEmergente1 = document.getElementById('ventananumero');
+        ventanaEmergente1.style.display = 'block';
+      }
+      function suma() {
+        var ventanaEmergente1 = document.getElementById('ventanasuma');
+        ventanaEmergente1.style.display = 'block';
+      }
+      function resta() {
+        var ventanaEmergente1 = document.getElementById('ventanaresta');
+        ventanaEmergente1.style.display = 'block';
+      }
+      function signos() {
+        var ventanaEmergente1 = document.getElementById('ventanasignos');
+        ventanaEmergente1.style.display = 'block';
+      }
+      
+    
+      function mostrarVentana1() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente1');
+        ventanaEmergente1.style.display = 'block';
+      }
+      function mostrarVentana2() {
+        var ventanaEmergente = document.getElementById('ventanaEmergente2');
+        ventanaEmergente.style.display = 'block';
+      }
+      function mostrarVentana3() {
+        var ventanaEmergente = document.getElementById('ventanaEmergente3');
+        ventanaEmergente.style.display = 'block';
+      }
+      function mostrarVentana4() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente4');
+        ventanaEmergente1.style.display = 'block';
+      }
+      function mostrarVentana5() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente5');
+        ventanaEmergente1.style.display = 'block';
+      }
+      function mostrarVentana6() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente6');
+        ventanaEmergente1.style.display = 'block';
+      }
+      function mostrarVentana7() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente7');
+        ventanaEmergente1.style.display = 'block';
+      }
+      function mostrarVentana8() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente8');
+        ventanaEmergente1.style.display = 'block';
+      }
+      function mostrarVentana9() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente9');
+        ventanaEmergente1.style.display = 'block';
+      }
+    
+    
+      function ventanaclose(){
+        var ventanac=document.getElementById('ventanaclose');
+        ventanac.style.display = 'block';
+      }
+      function cerrar_ventana_close(){
+        var ventanac=document.getElementById('ventanaclose');
+        ventanac.style.display = 'none';
+      }
+    
+    
+      function cerrarnumero() {
+        var ventanaEmergente1 = document.getElementById('ventananumero');
+        ventanaEmergente1.style.display = 'none';
+      }
+      function cerrarsuma() {
+        var ventanaEmergente1 = document.getElementById('ventanasuma');
+        ventanaEmergente1.style.display = 'none';
+      }
+      function cerrarresta() {
+        var ventanaEmergente1 = document.getElementById('ventanaresta');
+        ventanaEmergente1.style.display = 'none';
+      }
+      function cerrarsignos() {
+        var ventanaEmergente1 = document.getElementById('ventanasignos');
+        ventanaEmergente1.style.display = 'none';
+      }
+    
+      
+      function cerrarVentana1() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente1');
+        ventanaEmergente1.style.display = 'none';
+      }
+      function cerrarVentana2() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente2');
+        ventanaEmergente1.style.display = 'none';
+      }
+      function cerrarVentana3() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente3');
+        ventanaEmergente1.style.display = 'none';
+      }
+      function cerrarVentana4() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente4');
+        ventanaEmergente1.style.display = 'none';
+      }
+      function cerrarVentana5() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente5');
+        ventanaEmergente1.style.display = 'none';
+      }
+      function cerrarVentana6() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente6');
+        ventanaEmergente1.style.display = 'none';
+      }
+      function cerrarVentana7() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente7');
+        ventanaEmergente1.style.display = 'none';
+      }
+      function cerrarVentana8() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente8');
+        ventanaEmergente1.style.display = 'none';
+      }
+      function cerrarVentana9() {
+        var ventanaEmergente1 = document.getElementById('ventanaEmergente9');
+        ventanaEmergente1.style.display = 'none';
+      }
+    </script>
+{%endblock%}
