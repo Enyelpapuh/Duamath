@@ -36,9 +36,33 @@
 </head>
 
 <body>
+    <script>
+
+        function aviso() {
+            var ventanaEmergente1 = document.getElementById('ventan_aviso');
+            ventanaEmergente1.style.display = 'block';
+        }
+
+        function cerrar_aviso(){
+            var ventanac = document.getElementById('ventan_aviso');
+            ventanac.style.display = 'none';
+        }
+</script>
+
+<div id="ventan_aviso" class="ventana" style="display: none;">
+    <div class="txtemergente">
+        <h2>aviso</h2>
+        <p>¿Estás seguro de regresar? Si no has completado el nivel, no se guardará el progreso.</p>
+        <a class="duabtn txt" onclick="cerrar_aviso()">Negar</a>
+        <a class="duabtn txt" href="/mapa">Aceptar</a>
+    </div>
+</div>
+
     <div class="header">
         <h1>nivel 7</h1>
     </div>
+
+    <button class="duabtn txt" onclick="aviso()" id="regresar">Regresar</button>
 
     <div class="container">
         <div class="section">

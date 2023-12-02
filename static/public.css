@@ -106,3 +106,23 @@ body {
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
+.mision{
+  width: 80%;
+  background-color: #9e89e0;
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 16px;
+  margin-bottom: 16px;
+
+}
+.vision{
+  width: 80%;
+  background-color: #9e89e0;
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+h1{
+  font-size: 24px;
+}

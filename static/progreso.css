@@ -265,7 +265,12 @@ img {
   height: 180px;
   margin-bottom: 16px;
 }
-
+.mensaje2{
+  background-color: #B9ABEB;
+  border-radius: 16px;
+  height: 180px;
+  margin-bottom: 16px;
+}
 
 
 @media (min-width: 700px) {
@@ -285,6 +290,12 @@ img {
     margin-bottom: 16px;
   }
   .mensaje1{
+    background-color: #B9ABEB;
+    border-radius: 16px;
+    height: 180px;
+    margin-bottom: 16px;
+  }
+  .mensaje2{
     background-color: #B9ABEB;
     border-radius: 16px;
     height: 180px;
@@ -314,4 +325,27 @@ img {
     height: 20%;
     margin-bottom: 16px;
   }
+  .mensaje2{
+    background-color: #B9ABEB;
+    border-radius: 16px;
+    height: 180px;
+    margin-bottom: 16px;
+  }
+}
+
+.ventanaclose{
+  background-color: gray;
+}
+.btnclose{
+  background-color: rgb(193, 183, 183) !important;
+  box-shadow: 0 5px 0 rgb(35, 60, 60) !important;
+}
+
+.btnfinal{
+  height: 50px;
+  width: 70px;
+  border-radius: 100%;
+  background-color: rgb(233, 84, 84);
+  box-shadow: 0 5px 0 rgb(89, 31, 22);
+  margin-bottom: 50px;
 }
