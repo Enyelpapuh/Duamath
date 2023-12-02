@@ -261,6 +261,10 @@ def nivel7_publico():
 def nivel8_publico():
     return render_template('nivel_8_publico.html')
 
+@app.route('/nivel9_p')
+def nivel9_publico():
+    return render_template('nivel_9_publico.html')
+
 @app.route('/mundo1_p')
 def mostrar_seccion1_publico():
    return render_template('Mundo_1_publico.html')

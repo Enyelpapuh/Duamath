@@ -42,7 +42,7 @@ button, input[type="submit"] {
 
 input[type="text"] {
   line-height: 1.8;
-  width: 25%;
+
 }
 
 input[type="text"]:hover {
@@ -239,4 +239,22 @@ img {
 .block:active {
   box-shadow: none;
   transform: translateY(5px);
+}
+
+@media (min-width: 600px) {
+  .section {
+    padding: 10% 10%;
+
+  }
+  
+  
+  
+}
+@media (min-width: 800px) {
+  .section {
+    margin: 100px;
+
+  }
+  
+  
 }
