@@ -193,6 +193,44 @@ def mostrar_seccion3():
 @app.route('/mundo4')
 def mostrar_seccion4():
    return render_template('Mundo_4.html')
+#----------------------------------------#
+@app.route('/clase_1')
+@login_required
+def clase1():
+   return render_template('clase_1.html')
+
+@app.route('/clase_2')
+@login_required
+def clase2():
+   return render_template('clase_2.html')
+
+@app.route('/clase_3')
+@login_required
+def clase3():
+   return render_template('clase_3.html')
+
+@app.route('/clase_4')
+@login_required
+def clase4():
+   return render_template('clase_4.html')
+#----------------------------------------#
+#----------------------------------------#
+@app.route('/clase_1_publico')
+def clase1_publico():
+   return render_template('clase_1_publico.html')
+
+@app.route('/clase_2_publico')
+def clase2_publico():
+   return render_template('clase_2_publico.html')
+
+@app.route('/clase_3_publico')
+def clase3_publico():
+   return render_template('clase_3_publico.html')
+
+@app.route('/clase_4_publico')
+def clase4_publico():
+   return render_template('clase_4_publico.html')
+#----------------------------------------#
 
 @app.route('/nivel_1')
 def nivel1():
@@ -282,11 +320,7 @@ def mostrar_seccion4_publico():
    return render_template('Mundo_4_publico.html')
 #------------------------------------------------#
 
-@app.route('/vision')
-def vision():
-    return render_template('vision.html')
-   
-@app.route('/mision')
-def mision():
-    return render_template('mision.html')
-   
+@app.route('/mivi')
+@login_required
+def mivi():
+    return render_template('mivi.html')

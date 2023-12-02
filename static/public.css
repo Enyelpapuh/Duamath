@@ -126,3 +126,9 @@ body {
 h1{
   font-size: 24px;
 }
+
+iframe {
+  border: 0;
+  margin: auto;
+}
+
