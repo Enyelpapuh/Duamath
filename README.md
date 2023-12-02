@@ -1,3 +1,3 @@
 # DuaMath
 #### Video Demo: 
-#### Description: uwu
+#### Description: como surgio la idea? objetivo dificulatades, redactar de manera diferente ala mision y vision

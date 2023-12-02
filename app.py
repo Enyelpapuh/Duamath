@@ -44,12 +44,12 @@ def login():
     if request.method == "POST":
         # Ensure username was submitted
         if not request.form.get("username"):
-            flash("must provide username")
+            flash("ingresa un username")
             return redirect(request.url)
 
         # Ensure password was submitted
         elif not request.form.get("password"):
-            flash("must provide password")
+            flash("Ingresa un password")
             return redirect(request.url)
 
         # Query database for username
