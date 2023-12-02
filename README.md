@@ -1,3 +1,4 @@
 # DuaMath
 #### Video Demo: 
-#### Description: uwu
+#### Description: holanda mi gente latina
+
