@@ -1,2 +1,3 @@
-# Duamath
-Una apliacacion web para la idea enseñas las matematicas basicas
+# DuaMath
+#### Video Demo: 
+#### Description:

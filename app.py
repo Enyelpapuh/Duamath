@@ -309,7 +309,7 @@ def mostrar_seccion1_publico():
 
 @app.route('/mundo2_p')
 def mostrar_seccion2_publico():
-   return render_template('Mundo_2._publico.html')
+   return render_template('Mundo_2_publico.html')
 
 @app.route('/mundo3_p')
 def mostrar_seccion3_publico():
